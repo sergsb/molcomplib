@@ -1,0 +1,5 @@
+SimpleCompounds:
+  x: "10 < x < 20"
+  y: "10 < y < 20"
+  description: "Simple compounds (linear without rigns)"
+  typicalRepresentatives: ["CCC","CCCN"]
