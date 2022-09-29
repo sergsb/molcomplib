@@ -59,7 +59,7 @@ class MolCompass:
         :param data: A pandas dataframe with smiles column.
         :return:
         """
-        def robust(x):
+        def robust(x):  
             try:
                 return self.__call__(x)
             except:
@@ -68,7 +68,7 @@ class MolCompass:
         try:
             import pandas as pd
             if isinstance(data, pd.DataFrame):
-                smilesColumn = [x for x in data.columns if x.lower() in ['smiles', 'smiles', 'smiles', 'molecules', 'structures','mols','smi']]
+                smilesColumn = [x for x in data.columns if x.lower() in ['smiles', 'smiles', 'smiles','canonical_smiles', 'molecules', 'structures','mols','smi']]
                 assert len(smilesColumn) == 1, "Dataframe should contain ONLY one smiles column, but found: {}".format(smilesColumn)
                 smilesColumn = smilesColumn[0]
                 coords = np.vstack(data[smilesColumn].apply(robust).values)
