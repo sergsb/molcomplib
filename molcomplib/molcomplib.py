@@ -71,10 +71,12 @@ class MolCompass:
                 smilesColumn = [x for x in data.columns if x.lower() in ['smiles', 'smiles', 'smiles','canonical_smiles', 'molecules', 'structures','mols','smi']]
                 assert len(smilesColumn) == 1, "Dataframe should contain ONLY one smiles column, but found: {}".format(smilesColumn)
                 smilesColumn = smilesColumn[0]
-                coords = np.vstack(data[smilesColumn].apply(robust).values)
-                x = coords[:,0]
-                y = coords[:,1]
-                return pd.concat([data, pd.DataFrame({"x":x,"y":y})], axis=1,ignore_index=True)
+                coords = data[smilesColumn].apply(robust)
+                #add coords to the dataframe
+                data['x'] = coords.apply(lambda x: x[0])
+                data['y'] = coords.apply(lambda x: x[1])
+                return data
+
         except ImportError:
             pass
         except Exception as e:
