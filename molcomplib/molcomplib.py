@@ -74,7 +74,7 @@ class MolCompass:
                 coords = np.vstack(data[smilesColumn].apply(robust).values)
                 x = coords[:,0]
                 y = coords[:,1]
-                return pd.concat([data, pd.DataFrame({"x":x,"y":y})], axis=1)
+                return pd.concat([data, pd.DataFrame({"x":x,"y":y})], axis=1,ignore_index=True)
         except ImportError:
             pass
         except Exception as e:
