@@ -9,6 +9,9 @@ You can install it directly from github:
 
 ```pip install git+https://github.com/sergsb/molcomplib.git```
 
+or from `PyPi` like normal python package:
+``pip install molcomplib``
+
 ## Usage
 Import the libraty and create ``MolCompass `` object:
 ```
