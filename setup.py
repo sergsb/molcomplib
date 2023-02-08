@@ -4,7 +4,7 @@ setup(
     # Your setup arguments
     python_requires='>=3.6',  # Your supported Python ranges
     name = "molcomplib",
-    version = "1.0.0",
+    version = "1.0.1",
     description = "A python library and the standatrized model for the navigation in chemical space. It consists of parametric t-SNE model pretrained on large dataset of bioactive compounds"
                   "This library is a part of MolCompass project. ",
     author = "Sergey Sosnin <serg.sosnin@gmail.com>",
