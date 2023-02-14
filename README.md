@@ -10,12 +10,8 @@ This model was trained on ChEMBL data (about 1 Million of molecules). This libra
 <br>
 
 ## Installation
-You can install it directly from github:
-
-```pip install git+https://github.com/sergsb/molcomplib.git```
-
-or from `PyPi` like normal python package:
-``pip install molcomplib``
+Pip: ``pip install molcomplib``
+Conda: ``conda install -c conda-forge molcomplib``
 
 ## Usage
 Import the libraty and create ``MolCompass `` object:
