@@ -1,8 +1,13 @@
-## Introduction 
-`molcomplib` is a key component of the `MolCompass` project.
 
-It is a python library, that provides the pretrained parametric t-SNE model for molecular visualization.
+
+## Introduction 
+<img align="left" src="https://user-images.githubusercontent.com/4963384/218703831-1460bc07-7e9f-417e-9b0c-c9675db5de9f.png"> <p align="justify">
+ `Molcomplib` is a key component of the `MolCompass` project. It is a python library, that provides the pretrained parametric t-SNE model for molecular visualization.
 This model was trained on ChEMBL data (about 1 Million of molecules). This library generates X and Y coordinates for compounds so that similar compounds group together forming well-recognisible clusters. The library is lightweight, and requires only `rdkit` and `numpy` (optionally, `pandas`) 
+ 
+</p>
+
+<br>
 
 ## Installation
 You can install it directly from github:
