@@ -12,7 +12,6 @@ This model was trained on ChEMBL data (about 1 Million of molecules). This libra
 
 ## Installation
 Pip: ``pip install molcomplib``
-Conda: ``conda install -c conda-forge molcomplib``
 
 ## Usage
 Import the libraty and create ``MolCompass `` object:
