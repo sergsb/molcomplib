@@ -68,7 +68,7 @@ class MolCompass:
         try:
             import pandas as pd
             if isinstance(data, pd.DataFrame):
-                smilesColumn = [x for x in data.columns if x.lower() in ['smiles', 'smiles', 'smiles','canonical_smiles', 'molecules', 'structures','mols','smi']]
+                smilesColumn = [x for x in data.columns if x.lower() in ['smiles', 'smiles', 'smiles','canonical_smiles', 'molecules', 'structures','mols','smi','smiles_processed_mcv']]
                 assert len(smilesColumn) == 1, "Dataframe should contain ONLY one smiles column, but found: {}".format(smilesColumn)
                 smilesColumn = smilesColumn[0]
                 coords = data[smilesColumn].apply(robust)
