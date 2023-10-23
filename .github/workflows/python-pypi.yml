@@ -25,7 +25,7 @@ jobs:
         
     - name: Build and publish package
       env:
-        PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        PYPI: ${{ secrets.PYPI }}
       run: |
         python setup.py sdist bdist_wheel
-        twine upload dist/* -u __token__ -p $PYPI_API_TOKEN
+        twine upload dist/* -u __token__ -p $PYPI
