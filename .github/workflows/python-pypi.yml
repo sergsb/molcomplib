@@ -1,8 +1,10 @@
 name: Deploy to PyPi
 
 on:
-  release:
-    types: [published]  # This will trigger the workflow when a new release is published.
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   deploy:
