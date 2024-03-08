@@ -10,6 +10,9 @@ This model was trained on ChEMBL data (about 1 Million of molecules). This libra
 
 <br>
 
+## Other parts of MolCompass
+`molcomplib` is a computational engine for MolCompass KNIME Node and MolCompass Viewer GUI tool.  
+
 ## Installation
 Pip: ``pip install molcomplib``
 
