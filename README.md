@@ -3,18 +3,24 @@
 ## Introduction 
 
 <img align="left" src="https://user-images.githubusercontent.com/4963384/218703831-1460bc07-7e9f-417e-9b0c-c9675db5de9f.png"> <p align="justify">
- `Molcomplib` is a key component of the `MolCompass` project. It is a python library, that provides the pretrained parametric t-SNE model for molecular visualization.
-This model was trained on ChEMBL data (about 1 Million of molecules). This library generates X and Y coordinates for compounds so that similar compounds group together forming well-recognisible clusters. The library is lightweight, and requires only `rdkit` and `numpy` (optionally, `pandas`) 
+ `Molcomplib` is a key component of the `MolCompass` project. It is a python library, that provides the pretrained parametric t-SNE model for molecular visualization. This library generates X and Y coordinates for compounds so that similar compounds group together forming well-recognisible clusters. The library is lightweight, and requires only `rdkit` and `numpy` (optionally, `pandas`) 
  
 </p>
 
 <br>
 
-## Other parts of MolCompass
-`molcomplib` is a computational engine for MolCompass KNIME Node and MolCompass Viewer GUI tool.  
+## Graphical abstract
+<img align="left" width="200px" src="https://github.com/sergsb/molcomplib/assets/4963384/ce56961c-8ce0-46eb-ab6a-d66c4be73a6c.png"> 
+
+Application of a Parametric t-SNE model: A set of chemical compounds **(A)** is converted into ECFP binary fingerprints of a fixed length **(B)**. Then, a pretrained artificial neural network (ANN) **(C)** projects these fingerprints into coordinates, forming 2D clusters where structurally similar compounds are grouped together **(D)**
+
+<br>
+
+<br>
 
 ## Installation
-Pip: ``pip install molcomplib``
+`pip install molcomplib`
+
 
 ## Usage
 Import the libraty and create ``MolCompass `` object:
@@ -53,3 +59,8 @@ print(res)
   smiles         x          y
 0    CCO -0.988721 -35.781844
 1    CCC -1.606521 -36.254692
+```
+
+## Other parts of MolCompass
+`molcomplib` is a computational engine for [MolCompass KNIME Node](https://github.com/sergsb/MolCompassKnimeNode) and [MolCompass Viewer GUI tool (molcompview)](https://github.com/sergsb/molcompview).  
+
