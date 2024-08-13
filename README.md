@@ -64,7 +64,24 @@ print(res)
 `molcomplib` is a computational engine for [MolCompass KNIME Node](https://github.com/sergsb/MolCompassKnimeNode) and [MolCompass Viewer GUI tool (molcompview)](https://github.com/sergsb/molcompview).  
 
 ## Citation
-``Sosnin S. MolCompass: Multi-Tool for the Navigation in Chemical Space and Visual Validation of QSAR/QSPR Models submitted to Journal of Cheminformatics``
+``Sosnin, S. MolCompass: multi-tool for the navigation in chemical space and visual validation of QSAR/QSPR models. J Cheminform 16, 98 (2024). https://doi.org/10.1186/s13321-024-00888-z``
+
+### Citation (bibtex)  
+```
+@article{Sosnin2024,
+  title = {MolCompass: multi-tool for the navigation in chemical space and visual validation of QSAR/QSPR models},
+  volume = {16},
+  ISSN = {1758-2946},
+  url = {http://dx.doi.org/10.1186/s13321-024-00888-z},
+  DOI = {10.1186/s13321-024-00888-z},
+  number = {1},
+  journal = {Journal of Cheminformatics},
+  publisher = {Springer Science and Business Media LLC},
+  author = {Sosnin,  Sergey},
+  year = {2024},
+  month = aug 
+}
+ ```
 
 ## DOI for the package version 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12529381.svg)](https://doi.org/10.5281/zenodo.12529381)
