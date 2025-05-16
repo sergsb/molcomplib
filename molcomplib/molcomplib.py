@@ -77,7 +77,7 @@ class MolCompass:
                 return self.__call__(x)
             except:
                 return np.array(
-                    [np.NAN, np.NAN], dtype=np.float32
+                    [np.nan, np.nan], dtype=np.float32
                 )  # Fixme: if the dimensionality is 3d, then it should be np.array([np.NAN,np.NAN,np.NAN],dtype=np.float32)
 
         try:
